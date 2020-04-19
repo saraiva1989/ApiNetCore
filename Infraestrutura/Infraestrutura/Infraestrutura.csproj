@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Pessoa\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infraestrutura.Interfaces\Infraestrutura.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Core\Aplicacao.Dominio\Aplicacao.Dominio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="MySqlConnector" Version="0.63.2" />
+  </ItemGroup>
+</Project>

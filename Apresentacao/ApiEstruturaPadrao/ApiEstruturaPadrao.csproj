@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infraestrutura\Infraestrutura.Interfaces\Infraestrutura.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Infraestrutura\Infraestrutura\Infraestrutura.csproj" />
+    <ProjectReference Include="..\..\Core\Aplicacao.Interfaces\Aplicacao.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Core\Aplicacao\Aplicacao.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+</Project>
